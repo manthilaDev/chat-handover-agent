@@ -1,0 +1,25 @@
+html,
+body {
+    background: white;
+    height: 100%;
+    background-image: url("WebPage.jpg");
+    background-repeat: no-repeat;
+}
+
+#title{
+margin-left:60%;
+margin-top:20px;
+color:black;
+}
+
+
+#center-text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+

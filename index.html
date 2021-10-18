@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conversational Digital Assistant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+    <link rel="stylesheet" href="./webchat-style.css">
+
+</head>
+
+<body>
+
+    <div id="body">
+  <h1 id="title"> Conversational Digital Assistant </h1>
+
+        
+
+
+        </div>
+
+
+
+
+    </div>
+    <!-- partial -->
+
+
+    <script>
+        (function(d,t) {
+          var BASE_URL="https://app.chatwoot.com";
+          var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src=BASE_URL+"/packs/js/sdk.js";
+          g.defer = true;
+          g.async = true;
+          s.parentNode.insertBefore(g,s);
+          g.onload=function(){
+            window.chatwootSDK.run({
+              websiteToken: 'PKXxgCt5s9zixkDpw1W5n9hD',
+              baseUrl: BASE_URL
+            })
+
+          }
+        })(document,"script");
+        window.chatwootSettings = {
+            type: 'expanded_bubble',
+            launcherTitle: 'Chat with Live Agent'
+        }
+        window.addEventListener('chatwoot:ready', function () {
+            window.$chatwoot.toggle();
+            window.$chatwoot.toggle('open');
+            window.$chatwoot.setUser('live_agent_customer', {
+            email: '',
+            name: 'Web Customer',
+            avatar_url: 'https://media.istockphoto.com/vectors/user-avatar-profile-icon-black-vector-illustration-vector-id1209654046?b=1&k=6&m=1209654046&s=612x612&w=0&h=19zCWr8x8xoKROkUMPnyI7A58BdbJrnvmztk5LA_-Fo=',
+            phone_number: '',
+            });
+
+        }); 
+        
+      </script>  
+</body>
+
+</html>
